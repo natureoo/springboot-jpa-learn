@@ -19,4 +19,8 @@ public interface UserDao extends JpaRepository<UserDO, Long> {
 
     @Query("SELECT U FROM UserDO U ,RoleUserDO RU WHERE U.id = RU.userId AND RU.roleId = :roleId")
     List<UserDO> findUsersByRole(@Param("roleId") Long roleId);
+
+    @Query(nativeQuery = true, value = "SELECT * FROM AUTH_USER WHERE name = :name1  OR name = :name2 ")
+    List<UserDO> findSQL(@Param("name1") String name1, @Param("name2") String name2);
+
 }
