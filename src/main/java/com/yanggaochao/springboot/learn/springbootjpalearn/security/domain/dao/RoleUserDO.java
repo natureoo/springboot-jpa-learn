@@ -6,12 +6,7 @@ import javax.persistence.IdClass;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-/**
- * 角色用户关系实体类
- *
- * @author 杨高超
- * @since 2018-03-12
- */
+
 @Entity
 @IdClass(RoleUserDO.class)
 @Table(name = "AUTH_ROLE_USER")

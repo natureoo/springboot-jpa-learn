@@ -3,12 +3,7 @@ package com.yanggaochao.springboot.learn.springbootjpalearn.security.domain.dto;
 
 import com.yanggaochao.springboot.learn.springbootjpalearn.security.domain.dao.UserDO;
 
-/**
- * 用户登录业务对象类
- *
- * @author 杨高超
- * @since 2018-03-12
- */
+
 public class SecurityEntity {
     private String token;
     private Long exipre;

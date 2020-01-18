@@ -5,12 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- * 角色实体类
- *
- * @author 杨高超
- * @since 2018-03-12
- */
+
 @Entity
 @Table(name = "AUTH_ROLE")
 public class RoleDO {
